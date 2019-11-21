@@ -1,0 +1,276 @@
+
+ @font-face {
+   font-family: "Rajdhani"; src: url("//db.onlinewebfonts.com/t/3e09062e3b0ce6bb44ab60de3bca0374.eot"); src: url("//db.onlinewebfonts.com/t/3e09062e3b0ce6bb44ab60de3bca0374.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3e09062e3b0ce6bb44ab60de3bca0374.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3e09062e3b0ce6bb44ab60de3bca0374.woff") format("woff"), url("//db.onlinewebfonts.com/t/3e09062e3b0ce6bb44ab60de3bca0374.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3e09062e3b0ce6bb44ab60de3bca0374.svg#Rajdhani") format("svg");
+   }
+body{
+     font-family: "Rajdhani", Arial, Helvetica, sans-serif;    
+     overflow-x: hidden;
+}
+   
+.divisions {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;  
+}
+.imgDiv{background: #74ebd5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5); 
+  background: linear-gradient(to right, #ACB6E5, #74ebd5);
+ flex: 0.36;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+}
+.imgDiv img {
+border-top: 15px solid rgba(0, 0, 0, 0.158);
+border-bottom: 15px solid rgba(0, 0, 0, 0.158);
+width: 100% !important;
+height: auto;
+}
+.bioDiv {  
+ flex: 0.64;
+ display: flex;
+ flex-direction: column;
+ align-content: flex-start;
+}
+.details {
+  background: #2193b0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+ display: flex;
+ flex-direction: column;
+ height: 70vh;
+ padding: 30px;
+ justify-content: space-between;
+}
+.teamName {
+ align-self: flex-end;
+ font-size: 40px;
+ font-weight: 800;
+ margin-right: 30px;
+}
+.about h1 {
+ font-weight: bolder;
+ margin-bottom: 10px;
+ font-size: 38px;
+}
+.stack h2 {
+  font-weight: bolder;
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+.about p{
+ margin-bottom: 25px;
+}
+.about p, .stack li {
+ color: rgb(255, 255, 255);
+ font-size: 24px;
+ line-height: 143%;
+}
+.info{
+ width: 60%;
+}
+.stack ul {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+}
+.flex_li {
+ margin-right: 20px;
+ display: flex;
+ flex-direction: column;
+}
+.stack li::before {
+ content: "\2022";
+ color: rgb(250, 0, 0);
+ font-weight: bold;
+ font-size: 30px;
+ margin-right: 10px;
+}
+.socials{ 
+ align-self: flex-end;
+}
+.socials ul{
+ display: flex;
+ flex-direction: row;
+ margin-top: -115px;
+}
+.socials li{
+ height: 50px;
+ width: 50px;
+ margin-left: 10px;
+ border-radius: 50%; 
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border: 1.5px solid white;
+}
+.insta{
+  display: none;
+  background-color: #4060A5;
+}
+.mail {
+  background-color: #DC4335;
+}
+.twitter{
+  background-color: #339DC3;
+}
+.wa {
+  background-color: #30BF39;
+}
+.socials li img{
+ width: auto;
+ height: auto;
+}
+.members {
+ background-color: white;
+ height: 35vh; 
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ margin-left: -25vw;
+ position: relative;
+ z-index: 0; 
+}
+.profiles {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ width: 100%;
+ min-width: fit-content;
+ position: relative;
+ z-index: 2;
+}
+.profile_image {
+ margin-top: -60px;
+ background-color: thistle;
+ height: 220px;
+ max-height: fit-content;
+ width: 220px;
+ border: 1px solid black;
+ display: flex;
+ flex-direction: column;
+}
+.profile_image img{
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+ width: auto;
+ height: inherit;
+}
+.profile_image_name{
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+ text-align: center;
+ color: white;
+ background-color: black;
+ padding-top: 15px;
+ padding-bottom: 15px;
+}
+.label {
+ align-self: flex-end;
+ margin-bottom: 10px;
+ margin-top: 60px;
+ font-size: 20px;
+ line-height: 30px;
+ white-space: normal;
+}
+.waterMark {
+  margin: 0;
+  overflow: hidden;
+  font-size: 200px;
+  font-weight: bolder;
+  color: rgb(148, 148, 148);
+  position: absolute;
+  z-index: 0;
+  left: 10px;
+  top: 50%;
+}
+.trim {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  overflow-y: hidden;
+}
+@media only screen and (max-width: 1454px){
+ .socials ul{
+  flex-direction: column;
+  margin-top: -253px;
+ }
+ .socials li {
+  margin-left: 0;
+  margin-top: 5px;
+ }
+ .members {
+  flex-direction: column;
+}
+
+}
+@media only screen and (max-width: 1020px){ 
+ .bioDiv {  
+  flex: 0.6;
+ }
+ .imgDiv {
+  flex: 0.4;
+ }
+ .profile_image{
+  height: 180px;
+  width: 160px;
+ }
+ .members{
+ margin-left: -20vw;
+ }
+ .waterMark {
+   font-size: 150px;
+ }
+ 
+}
+@media only screen and (max-width: 855px){
+ .divisions{
+  flex-direction: column;
+  overflow-x: hidden;
+ }
+ .imgDiv{
+  flex: 1;
+  height: 45vh;
+  flex-direction: row;
+  width: auto;
+ }
+ .imgDiv img{
+   width: auto;
+  height: auto;
+  margin-top: 20px;
+ }
+ .bioDiv {
+  flex: 1;
+ }
+ .details{
+   justify-content: flex-start;
+   height: fit-content;
+ }
+ .members {
+  margin: 0;
+  overflow-x: scroll;
+  overflow-y: visible;
+ } 
+ .profile_image {
+   width:  140px;
+   height: 150px;   
+ }
+ .waterMark {
+  font-size: 90px;
+  }
+  .trim {
+    top: 100px;
+    left: 10px
+  }
+}
+@media only screen and (max-height: 741px){
+  @media only screen and (max-width: 1920px){
+    .profile_image {
+      margin-top: 0px;
+    }
+  }
+}
