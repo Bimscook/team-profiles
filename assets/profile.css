@@ -177,7 +177,7 @@ box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 .waterMark {
   margin: 0;
   overflow: hidden;
-  font-size: 200px;
+  font-size: 180px;
   font-weight: bolder;
   color: rgb(148, 148, 148);
   position: absolute;
